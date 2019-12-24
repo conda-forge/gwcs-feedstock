@@ -21,6 +21,7 @@ requirements:
   build:
     - python >=3
     - setuptools
+    - setuptools_scm
     - pip
   run:
     - python >=3
