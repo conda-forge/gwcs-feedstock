@@ -25,8 +25,9 @@ requirements:
     - pip
   run:
     - python >=3
-    - astropy
+    - astropy >=4.0
     - asdf
+    - numpy
 
 test:
   imports:
