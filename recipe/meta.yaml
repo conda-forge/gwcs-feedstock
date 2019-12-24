@@ -1,7 +1,7 @@
 {% set name = "gwcs" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "3167a39f93cbde705dd8364dd72434b38327d8585b43d8097548248696e8fd7b" %}
+{% set hash_value = "f2afa6fe8d41dd0a54c0c9aa2e276207c9ed5964a594a4741f3918205b6e3d74" %}
 
 package:
   name: '{{ name|lower }}'
@@ -15,16 +15,19 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install --offline --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
     - python >=3
     - setuptools
+    - setuptools_scm
+    - pip
   run:
     - python >=3
-    - astropy
+    - astropy >=4.0
     - asdf
+    - numpy
 
 test:
   imports:
