@@ -24,14 +24,15 @@ requirements:
   run:
     - python >=3.6
     - astropy >=4.1
-    - asdf
+    - asdf >=2.8.1
+    - asdf-astropy
+    - asdf_wcs_schemas
     - numpy
     - scipy
 
 test:
   imports:
     - gwcs
-    - gwcs.tags
 
 about:
   home: https://gwcs.readthedocs.io/en/latest/
