@@ -17,16 +17,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - setuptools_scm
     - pip
   run:
-    - python >=3.6
-    - astropy >=4.1
-    - asdf
+    - python >=3.8
+    - astropy >=5.1
+    - asdf >= 2.8.1
     - numpy
     - scipy
+    - asdf_wcs_schemas
+    - asdf-astropy >= 0.2.0
 
 test:
   imports:
