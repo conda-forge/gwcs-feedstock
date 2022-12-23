@@ -34,7 +34,6 @@ requirements:
 test:
   imports:
     - gwcs
-    - gwcs.tags
 
 about:
   home: https://gwcs.readthedocs.io/en/latest/
