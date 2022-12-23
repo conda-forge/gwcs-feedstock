@@ -1,5 +1,5 @@
 {% set name = "gwcs" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c30e90e48eae6d252abc5dd05b4b0b1e84629a28f56b72e23e4d004a33e22e33
+  sha256: a466a057624c6a0507468b00c7991d3eef848c64f41d6ad11344c8fa6a99fe55
 
 build:
   noarch: python
