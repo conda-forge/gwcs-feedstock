@@ -1,11 +1,11 @@
-About gwcs
-==========
+About gwcs-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gwcs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gwcs.readthedocs.io/en/latest/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gwcs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generalized World Coordinate System
 
