@@ -1,5 +1,5 @@
 {% set name = "gwcs" %}
-{% set version = "0.18.3" %}
+{% set version = "0.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a466a057624c6a0507468b00c7991d3eef848c64f41d6ad11344c8fa6a99fe55
+  sha256: a2388fa9cb98d51e2a8338f52ac6dfb00a0b35d2694980a6a18c5b82552070b8
 
 build:
   noarch: python
@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - setuptools
     - setuptools_scm
     - pip
   run:
-    - python >=3.8
-    - astropy >=5.1
+    - python >=3.9
+    - astropy >=5.3
     - asdf >=2.8.1
     - numpy
     - scipy
