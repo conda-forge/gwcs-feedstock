@@ -1,5 +1,5 @@
 {% set name = "gwcs" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3f445556656d214327e7ee722afa6e304ca83d8a9dd8491088067ce2ad01bee
+  sha256: 8cd27f1ce6b25ad72cc33ca2e4178ab29d82050344c710713f74992136a1c5ba
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - asdf >=2.8.1
     - numpy
     - scipy
-    - asdf-wcs-schemas
+    - asdf-wcs-schemas >=0.4.0
     - asdf-astropy >=0.2.0
     - setuptools
 
